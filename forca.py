@@ -41,7 +41,7 @@ white = (255,255,255)
 # Variáveis importantes
 statusForca = 0
 palavras_lista = ['PYTHON', 'PYGAME', 'LISTAS', 'CARRO', 'MERCADO', 'FORCA', 'GATO', 'DRAGAO', 'LULA', 'ORNINTORRINCO', 'PATO', 'PINGUIM', 'ONOMATOPEIA', 'OTORRINOLARINGOLOGISTA', 'CACHORRO', 'LUZ', 'ESCURO', 'PRETO', 'BRANCO', 'LARANJA', 'VERDE', 'VERMELHO', 'ERVA', 'CHIMARRAO', 'FUTEBOL', 'BASQUETE', 'VIDEOGAME', 'VAMPIRO', 'MARMOTA', 'CARROSSEL', 'GELATINA', 'LASANHA', 'CHOCOLATE', 'BOLA', 'COMIDA', 'SAPO']
-palavra_random = random.choice(palavras_lista)
+
 tentativas = []
 
 
@@ -99,6 +99,7 @@ def jogoCPU():
     FPS = 60
     clock = pygame.time.Clock()
     rodando = True
+    palavra_random = random.choice(palavras_lista)
 
     while rodando:                                                                                                  
         clock.tick(FPS)                                                                                            
